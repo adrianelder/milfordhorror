@@ -29,9 +29,10 @@ facebook_username: MilfordHorror
 instagram_username: MilfordHorror
 
 # Build settings
+remote-theme: minima
 theme: minima
 plugins:
-#  - jekyll-remote-theme
+  - jekyll-remote-theme
   - jekyll-feed
 
 # Exclude from processing.
