@@ -31,6 +31,8 @@ instagram_username: MilfordHorror
 # Build settings
 remote-theme: minima
 theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
