@@ -5,5 +5,12 @@
 layout: home
 ---
 
-![Image name](/assets/MilfordHorrorMovieNightSmall.png)
+
+<center>
+<img alt="Watch The Blair Witch Project in the Woods" src="/assets/BlairWitchEventBanner.png">
+<a style="font-size: 4rem;" href="https://witchwoods.eventbrite.com">GET TICKETS</a>
+
+<p style="margin-top:4rem;">
+<img alt="Fall 2023 Milford Public Library Horror Movie Night" src="/assets/MilfordHorrorMovieNightSmall.png">
+
 
