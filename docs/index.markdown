@@ -7,9 +7,8 @@ layout: home
 
 
 <center>
-<img alt="Watch The Blair Witch Project in the Woods" src="/assets/BlairWitchEventBanner.png">
-<p style="font-size: 2rem;">This event is now SOLD OUT! Please follow on social media for updates about future events.
-<p><a style="font-size: 3rem;" href="https://witchwoods.eventbrite.com">GET TICKETS</a>
+<img alt="Watch Stag at The MAC" src="/assets/StagBanner.png">
+<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/milfordhorrorcom-presents-a-screening-of-stag-tickets-716532416747?aff=oddtdtcreator">GET TICKETS</a>
 
 <p style="margin-top:4rem;">
 <img alt="Fall 2023 Milford Public Library Horror Movie Night" src="/assets/MilfordHorrorMovieNightSmall.png">
