@@ -10,7 +10,7 @@ layout: home
 <img alt="Watch Stag at The MAC" src="/assets/StagBanner.png">
 <p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/milfordhorrorcom-presents-a-screening-of-stag-tickets-716532416747?aff=oddtdtcreator">GET TICKETS TO STAG</a>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XR97B61ddIY?si=xejhTi1vQh5HNuKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="width: 100%; aspect-ratio: 560 / 315;" src="https://www.youtube.com/embed/XR97B61ddIY?si=xejhTi1vQh5HNuKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <img alt="Watch Jason Lives in the woods at night" src="/assets/JasonLivesBanner.png">
 <p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-jason-lives-tickets-717293543297?aff=oddtdtcreator">GET TICKETS TO JASON LIVES</a>
