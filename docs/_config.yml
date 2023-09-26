@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Horror movie events in Milford Connecticut.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://MilfordHorror.com"
-twitter_username: MilfordHorror
 facebook_username: MilfordHorror
 instagram_username: MilfordHorror
 google_analytics: G-3TT01L0DM4
