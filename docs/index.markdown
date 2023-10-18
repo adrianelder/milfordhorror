@@ -7,9 +7,6 @@ layout: home
 
 
 <center>
-<img alt="Watch Jason Lives in the woods at night" src="/assets/JasonLivesBanner.png">
-<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-jason-lives-tickets-717293543297?aff=oddtdtcreator">GET TICKETS TO JASON LIVES</a>
-
 <img alt="Watch Shaun of the Dead at Firehouse Gallery" src="/assets/ShaunOfTheDeadBanner.png">
 <p><a style="font-size: 3rem;" href="https://www.zeffy.com/en-US/ticketing/8f2d6b99-bfd9-4fd4-85be-f0982948c6e3">GET TICKETS TO SHAUN OF THE DEAD</a>
 
