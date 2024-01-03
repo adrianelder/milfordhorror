@@ -8,10 +8,7 @@ layout: home
 
 <center>
 <p style="margin-top:4rem;">
-<img alt="The House by the Cemetery at the Milford Public Library Horror Movie Night" src="/assets/hbtc.png">
+<img alt="The Curse of Frankenstein at the Milford Public Library Horror Movie Night" src="/assets/CurseOfFrankenstein.png">
 <p style="font-size: 1.5rem;">No tickets necessary. Just show up at the Milford Public Library Program Room</p>
-
-<p style="margin-top:4rem;">
-<img alt="Fall 2023 Milford Public Library Horror Movie Night" src="/assets/MilfordHorrorMovieNightSmall.png">
 
 
