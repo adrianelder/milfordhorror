@@ -8,7 +8,7 @@ layout: home
 
 <center>
 <p style="margin-top:4rem;">
-<img alt="The Curse of Frankenstein at the Milford Public Library Horror Movie Night" src="/assets/CurseOfFrankenstein.png">
+<img alt="Milford Public Library Horror Movie Night" src="/assets/Feb27.png">
 <p style="font-size: 1.5rem;">No tickets necessary. Just show up at the Milford Public Library Program Room</p>
 
 
