@@ -13,8 +13,9 @@ layout: home
 
 <p style="margin-top:4rem;">
   <span style="font-size: 2rem;">Past Events</span>
-  <img src="/assets/past1.jpg">
-  <img src="/assets/past2.jpg">
   <img src="/assets/past3.jpg">
   <img src="/assets/past4.jpg">
+  <img src="/assets/past2.jpg">
+  <img src="/assets/past1.jpg">
+
   
