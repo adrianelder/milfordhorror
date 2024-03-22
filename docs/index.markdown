@@ -7,7 +7,7 @@ layout: home
 
 <center>
 <p style="margin-top:4rem;">
-<img alt="Milford Public Library Horror Movie Night" src="/assets/Feb27.png">
+<img alt="Milford Public Library Horror Movie Night" src="/assets/NightOfTheDemon.png">
 <p style="font-size: 1.5rem;">No tickets necessary. Just show up at the Milford Public Library Program Room</p>
 
 
