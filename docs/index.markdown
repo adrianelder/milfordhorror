@@ -6,6 +6,10 @@ layout: home
 ---
 
 <center>
+<img alt="Watch Evil Dead 2 in the woods at night" src="/assets/EvilDead2Banner.png">
+<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-evil-dead-ii-tickets-889992149477?aff=oddtdtcreator">EVIL DEAD 2 SOLD OUT</a>
+
+<p style="margin-top:4rem;">
 <img alt="Watch The Exorcist in a Church" src="/assets/TheExorcistBanner.png">
 <p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-the-exorcist-in-a-church-tickets-911652877297">GET TICKETS TO THE EXORCIST</a>
 
