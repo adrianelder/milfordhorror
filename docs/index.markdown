@@ -7,7 +7,7 @@ layout: home
 
 <center>
 <img alt="Watch The Exorcist in a Church" src="/assets/TheExorcistBanner.png">
-<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-the-exorcist-in-a-church-tickets-911652877297">GET TICKETS TO THE EXORCIST</a>
+<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-the-exorcist-in-a-church-tickets-911652877297">SOLD OUT! <strike>GET TICKETS TO THE EXORCIST</strike></a>
 
 <p style="margin-top:4rem;">
 <img alt="Watch The Witch in the woods at night" src="/assets/TheWitchBanner.png">
