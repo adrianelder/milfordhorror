@@ -40,6 +40,12 @@
               background-color: #1db954;
           }
       }
+      .backwards {
+	  background-color: #1db954;
+      }
+      .forwards {
+	  background-color: purple;
+      }
       button:disabled {
 	  border: 1px solid #999999;
 	  background-color: #cccccc;
@@ -48,6 +54,12 @@
       .container, .audioButtons {
 	  display: flex;
 	  flex-direction: column;
+      }
+      .buttonRow {
+	  display: flex;
+      }
+      .buttonRow button {
+	  flex-grow: 1;
       }
       #audioPlot {
 	  width: 800px;
@@ -63,10 +75,14 @@
       <button id="start">Record</button>
       <button id="stop" disabled>Stop</button>
       <div class="audioButtons">
-	<button id="playBackwards" disabled>Play Backwards</button>
-	<button id="playForwards" disabled>Play Forwards</button>
-	<button id="downloadBackwards" disabled >Download Backwards</button>
-	<button id="downloadForwards" disabled>Download Forwards</button>
+	<div class="buttonRow">
+	  <button id="playBackwards" class="backwards" disabled>Play Backwards</button>
+	  <button id="playForwards" class="forwards" disabled>Play Forwards</button>
+	</div>
+	<div class="buttonRow">
+	  <button id="downloadBackwards" class="backwards" disabled >Download Backwards</button>
+	  <button id="downloadForwards" class="forwards" disabled>Download Forwards</button>
+	</div>
       </div>
     </div>
     <script src="plotly.min.js"></script>
