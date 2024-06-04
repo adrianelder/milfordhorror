@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/faveicon.ico">
+    <title>Exorcist in a Church: Backmask</title>
     <style>
+      html, body {
+	  display: flex;
+	  width: 100%;
+	  flex-direction: column;
+	  align-items: center;
+      }
       body {
 	  background: black;
       }
@@ -51,6 +63,9 @@
 	  background-color: #cccccc;
 	  color: #666666;
       }
+      .container {
+	  max-width: 400px;
+      }
       .container, .audioButtons {
 	  display: flex;
 	  flex-direction: column;
@@ -62,7 +77,7 @@
 	  flex-grow: 1;
       }
       #audioPlot {
-	  width: 800px;
+	  width: 400px;
 	  height: 100px;
 	  align-self: center;
       }
@@ -72,16 +87,16 @@
     <div class="container">
       <div id="audioPlot"></div>
       <div id="downloads"></div>
-      <button id="start">Record</button>
-      <button id="stop" disabled>Stop</button>
+      <button id="start">⏺ Record</button>
+      <button id="stop" disabled>⏹ Stop</button>
       <div class="audioButtons">
 	<div class="buttonRow">
-	  <button id="playBackwards" class="backwards" disabled>Play Backwards</button>
-	  <button id="playForwards" class="forwards" disabled>Play Forwards</button>
+	  <button id="playBackwards" class="backwards" disabled>▶ Backwards</button>
+	  <button id="playForwards" class="forwards" disabled>▶ Forwards</button>
 	</div>
 	<div class="buttonRow">
-	  <button id="downloadBackwards" class="backwards" disabled >Download Backwards</button>
-	  <button id="downloadForwards" class="forwards" disabled>Download Forwards</button>
+	  <button id="downloadBackwards" class="backwards" disabled >💾 Backwards</button>
+	  <button id="downloadForwards" class="forwards" disabled>💾 Forwards</button>
 	</div>
       </div>
     </div>

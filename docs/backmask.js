@@ -84,7 +84,7 @@ function stopRecording() {
 			     t: 0,
 			     b: 0,
 			 },
-			width: 800,
+			width: 400,
 			height: 100,
 			xaxis: {visible: false},
 			yaxis: {visible: false},
