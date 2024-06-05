@@ -53,10 +53,12 @@
           }
       }
       .backwards {
-	  background-color: #1db954;
+	  background-color: purple;
+
       }
       .forwards {
-	  background-color: purple;
+	  background-color: #1db954;
+
       }
       button:disabled {
 	  border: 1px solid #999999;
@@ -75,24 +77,43 @@
       }
       .buttonRow button {
 	  flex-grow: 1;
+	  width: 50%;
       }
       #audioPlot {
 	  width: 400px;
 	  height: 100px;
 	  align-self: center;
       }
+      .hidden {
+	  display: none;
+      }
+      #console {
+	  margin-top: 15px;
+	  font-family: Arial;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+	  color: white;
+	  height: 30px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div id="audioPlot"></div>
+      <div id="console">Hit record to begin</div>
       <div id="downloads"></div>
       <button id="start">⏺ Record</button>
       <button id="stop" disabled>⏹ Stop</button>
       <div class="audioButtons">
 	<div class="buttonRow">
 	  <button id="playBackwards" class="backwards" disabled>▶ Backwards</button>
+	  <button id="stopBackwards" class="backwards hidden">⏹ Backwards</button>
 	  <button id="playForwards" class="forwards" disabled>▶ Forwards</button>
+	  <button id="stopForwards" class="forwards hidden" disabled>⏹ Backwards</button>
 	</div>
 	<div class="buttonRow">
 	  <button id="downloadBackwards" class="backwards" disabled >💾 Backwards</button>
