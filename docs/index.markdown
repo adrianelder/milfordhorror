@@ -31,6 +31,9 @@ layout: home
 <span style="font-size: 2rem;">Past Events</span>
   <div class="past-events">
     <div>
+      <img src="/assets/past-exorcist.jpg">
+    </div>
+    <div>
       <img src="/assets/past-ed2.jpg">
     </div>
     <div>
