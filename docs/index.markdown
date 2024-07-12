@@ -6,7 +6,7 @@ layout: home
 ---
 
 <center>
-<img alt="Watch The Witch in the woods at night" src="/assets/TheWitchBanner.png">
+<img alt="Watch The Witch in the woods at night" src="/assets/TheWitchBannerRescheduled.jpg">
 <p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-the-vvitch-tickets-911646638637">GET TICKETS TO THE VVITCH</a>
 
 
