@@ -6,10 +6,6 @@ layout: home
 ---
 
 <center>
-<img alt="Watch The Witch in the woods at night" src="/assets/TheWitchBannerRescheduled.jpg">
-<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-the-vvitch-tickets-911646638637">GET TICKETS TO THE VVITCH</a>
-
-<p style="margin-top:4rem;">
 <img alt="Watch Friday the 13 Part in the woods at night" src="/assets/F13Part2Banner.png">
 <p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-friday-the-13th-part-2-tickets-944160789337?aff=oddtdtcreator">GET LIMITED PRESALE TICKETS TO FRIDAY THE 13th PART 2</a>
 
@@ -34,6 +30,9 @@ layout: home
 <p style="margin-top:4rem;">
 <span style="font-size: 2rem;">Past Events</span>
   <div class="past-events">
+    <div>
+      <img src="/assets/past-thewitch.jpg">
+    </div>
     <div>
       <img src="/assets/past-exorcist.jpg">
     </div>
