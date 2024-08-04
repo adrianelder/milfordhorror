@@ -7,7 +7,7 @@ layout: home
 
 <center>
 <img alt="Watch Friday the 13 Part in the woods at night" src="/assets/F13Part2Banner.png">
-<p><a style="font-size: 3rem;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-friday-the-13th-part-2-tickets-944160789337?aff=oddtdtcreator">GET TICKETS TO FRIDAY THE 13th PART 2</a>
+<p><a style="font-size: 2rem; background: red; color: white;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-friday-the-13th-part-2-tickets-944160789337?aff=oddtdtcreator">GET TICKETS TO FRIDAY THE 13th PART 2</a>
 
 
 <p style="margin-top:4rem;">
