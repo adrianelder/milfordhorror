@@ -26,7 +26,7 @@ layout: home
 
 
 <p style="margin-top:1.5rem;">
-<a href="https://ctmirror.org/2024/08/09/ct-milford-horror-movies/" style="border-radius: 5px; background: white; color: black; line-height: 20px; padding: 5px; font-size: 24px;">
+<a href="https://ctmirror.org/2024/08/09/ct-milford-horror-movies/" style="border-radius: 5px; background: white; color: black; line-height: 20px; padding: 5px; font-size: 20px;">
 <img src="/assets/ctmirror.png" style="width: 120px; margin-bottom: 8px;"> article on Milford Horror</a>
 
 
