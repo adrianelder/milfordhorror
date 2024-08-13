@@ -1,0 +1,9 @@
+.friend-boxes {
+    display: flex;
+    justify-content: center;
+}
+.friend-box {
+    width: 240px;
+    color: white;
+    margin: 10px;
+}
