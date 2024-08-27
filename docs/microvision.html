@@ -1,0 +1,435 @@
+<!-- saved from url=(0059)http://eichler.byethost11.com/microvision/MicroBlockSim.htm -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Microvision Blockbuster Simulator</title>
+    
+    <script language="javascript" src="microvision-blocks.js"></script>
+    <link href="microvision.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body onload="FormStartUp();" topmargin="5" leftmargin="5" rightmargin="5">
+    
+      
+      <div id="player-panel">  
+	<table cellspacing="0" cellpadding="0" border="0" id="CartridgeLayout" name="CartridgeLayout" width="250px" align="center">
+	  
+	  <tbody><tr height="25px" valign="middle">
+	      <td colspan="3" align="CENTER" bgcolor="BLACK">
+		<font color="SILVER">M I C R O V I S I O N</font>
+	      </td>
+	    </tr>
+	    
+	    <tr height="5px">
+	      <td colspan="3" bgcolor="TAN">
+	      </td>
+	    </tr>
+	    
+	    <tr>
+	      <td bgcolor="TAN" width="10%">
+		&nbsp;
+	      </td>
+	      <td bgcolor="NAVY" align="CENTER" width="80%">
+		<font color="WHITE">
+		  <big>
+		    <b>BLOCK<br>
+		      BUSTER</b>
+		  </big>
+		  <table width="100%" cellspacing="0" cellpadding="0">
+		    <tbody><tr height="8px">
+			<td bgcolor="yellow"></td>
+			<td bgcolor="yellow"></td>
+			<td bgcolor="yellow"></td>
+			<td bgcolor="yellow"></td>
+			<td bgcolor="yellow"></td>
+			<td bgcolor="gold"></td>
+			<td bgcolor="gold"></td>
+			<td bgcolor="gold"></td>
+			<td bgcolor="gold"></td>
+			<td bgcolor="orange"></td>
+			<td bgcolor="orange"></td>
+			<td bgcolor="orange"></td>
+			<td bgcolor="tomato"></td>
+			<td bgcolor="tomato"></td>
+			<td bgcolor="red"></td>
+			<td bgcolor="navy"></td>
+		      </tr>
+		  </tbody></table>
+		  <small><small><font color="white">BY MILTON BRADLEY</font></small></small>
+	      </font></td>
+	      <td bgcolor="TAN" width="10%">
+		&nbsp;
+	      </td>
+	    </tr>
+	    
+	    <tr height="10px">
+	      <td colspan="3" bgcolor="tan"></td>
+	    </tr>
+	    
+	    <tr>
+	      
+	      <td bgcolor="TAN"></td>
+	      
+	      <td align="CENTER" bgcolor="TAN">
+		
+		<table width="100%" cellspacing="0" cellpadding="0">
+		  <tbody><tr>
+		      <td width="22px" bgcolor="WHITE"></td>
+		      <td align="left" bgcolor="WHITE" width="78px">
+			<small><small><font color="Navy">&nbsp;&nbsp;&nbsp;BALLS</font></small></small>
+		      </td>
+		      <td align="right" bgcolor="WHITE" width="78px">
+			<small><small><font color="Navy">SCORE&nbsp;&nbsp;&nbsp;</font></small></small>
+		      </td>
+		      <td width="22px" bgcolor="WHITE"></td>
+		    </tr>
+		    <tr height="5px">
+		      <td bgcolor="white"></td>
+		      <td colspan="2" bgcolor="YELLOW"></td>
+		      <td bgcolor="white"></td>
+		    </tr>
+		</tbody></table>
+		
+		<table width="100%" cellspacing="0" cellpadding="0">
+		  <tbody><tr>
+		      <td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tbody><tr height="8px">
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="YELLOW" width="5px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="YELLOW" width="5px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="YELLOW" width="5px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="YELLOW" width="5px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="YELLOW"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="ORANGE"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="RED"></td>
+			    </tr>
+			    <tr height="89px">
+			      <td colspan="3" bgcolor="NAVY"></td>
+			    </tr>
+			</tbody></table>
+		      </td>
+		      
+		      <td>
+			
+			<table cellspacing="1" cellpadding="0" border="0" id="ScreenTable" name="ScreenTable" rules="none" style="background-color: lightgrey">
+			  <tbody><tr id="ROW1" height="8px">
+			      <td width="8px" bgcolor="black"></td><td width="8px" bgcolor="black"></td><td width="8px" bgcolor="black"></td><td width="8px" bgcolor="gainsboro"></td>
+			      <td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="gainsboro"></td>
+			      <td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="black"></td><td width="8px" bgcolor="black"></td>
+			      <td width="8px" bgcolor="gainsboro"></td><td width="8px" bgcolor="black"></td><td width="8px" bgcolor="black"></td><td width="8px" bgcolor="black"></td>
+			    </tr>
+			    <tr id="ROW2" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW3" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="black"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW4" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW5" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="black"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW6" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW7" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW8" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW9" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW10" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW11" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW12" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW13" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW14" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW15" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			    <tr id="ROW16" height="8px">
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			      <td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td><td bgcolor="gainsboro"></td>
+			    </tr>
+			</tbody></table>
+			
+		      </td>
+		      
+		      <td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tbody><tr height="8px">
+			      <td bgcolor="YELLOW" width="5px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="YELLOW" width="5px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="YELLOW" width="5px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td bgcolor="YELLOW" width="5px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			      <td bgcolor="WHITE" width="11px"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="YELLOW"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="ORANGE"></td>
+			    </tr>
+			    <tr height="8px">
+			      <td colspan="3" bgcolor="RED"></td>
+			    </tr>
+			    <tr height="89px">
+			      <td colspan="3" bgcolor="NAVY"></td>
+			    </tr>
+			</tbody></table>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td colspan="3" bgcolor="navy"><br></td>
+		    </tr>
+		</tbody></table>
+		
+		<table border="0" cellspacing="0" cellpadding="0">
+		  <tbody><tr height="10px">
+		      <td></td>
+		    </tr>
+		</tbody></table>
+		
+		<table border="1" rules="none" cellspacing="0" cellpadding="0">
+		  <tbody><tr>
+		      <td align="center">
+			<br>
+			&nbsp;
+			<input type="button" value="BALLS" onclick="ChangeTotalBallCount()" style="background-color: navy; color: white; font-size: 8pt; width: 50px">
+			&nbsp;
+			<input type="button" value="SPEED" onclick="ChangeSpeed()" style="background-color: navy; color: white; font-size: 8pt; width: 50px">
+			&nbsp;
+			<input type="button" value="PADDLE" onclick="ChangePaddleSize()" style="background-color: navy; color: white; font-size: 8pt; width: 50px">
+			&nbsp;
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>&nbsp;</td>
+		    </tr>
+		    <tr>
+		      <td align="center">
+			<input type="button" value="GO" onclick="Go();" style="background-color: navy; color: white; font-size: 8pt; width: 50px">
+			<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			     <input type=button value="Reset" onclick="ResetScript();" -->
+		      </td>
+		    </tr>
+		    <tr height="5px"><td></td></tr>
+		</tbody></table>
+		
+		<table border="0" cellspacing="0" cellpadding="0">
+		  <tbody><tr height="10px">
+		      <td></td>
+		    </tr>
+		</tbody></table>
+		
+	      </td>
+	      
+	      <td bgcolor="TAN">
+	      </td>
+	      
+	    </tr>
+	    
+	    <tr height="40px" valign="middle">
+	      <td bgcolor="black"></td>
+	      <td bgcolor="black" align="center"><big><big><big><font color="silver">O</font></big></big></big></td>
+	      <td bgcolor="black"></td>
+	    </tr>
+	    
+	    
+	</tbody></table>
+      </div>
+      <div id="left-panel" class="hidden">
+	<h3>Blockbuster Instructions</h3>
+	
+	<small>
+	  
+	  The object of the game is for the player to move a paddle at the bottom of the screen left
+	  and right to bounce a ball against a wall of blocks.  Points are scored for knocking out
+	  blocks.  If the ball reaches the bottom of the screen without touching the paddle, that
+	  ball is lost.  When all balls are lost, the player's game is over.
+	  
+	  <p>
+	    
+	    You will initially be presented with an options screen.  You can pick how many balls
+	    the player should start with, the speed at which the game should move and how wide the
+	    paddle will be.  The number of balls defaults to 7, but by pressing the BALLS button
+	    the player can change that number to 5, 3, 1 or 9.  The game speed defaults to "S"
+	    (slow), but the SPEED button can be used to change it to "F" (fast).  The default paddle
+	    size is "T" (triple, three "pixels" wide), but can be changed to "D" (double, two
+	    "pixels" wide) with the PADDLE button.
+	    
+	  </p><p>
+	    
+	    Once the options are as you want them, press the GO button.  The options will be locked
+	    in and can not be changed until the game is over.  The initial playing field will be
+	    presented, with a full wall of blocks at the top and the paddle at the bottom.  The mouse
+	    is used to simulate the game's original knob control - move the mouse left and right to
+	    move the paddle left and right.
+	    
+	  </p><p>
+	    
+	    Pressing GO again will start the first ball moving down towards your paddle.
+	    To bounce the ball off the paddle, the ball must be flush with the top of one of the
+	    paddle's pixels.  If the ball hits the corner of the paddle on a diagonal, it counts
+	    as a miss.  If the bottom edge of the ball hits the left portion of the paddle, it will
+	    rebound up and to the left.  If the ball hits the right side of the paddle, it will
+	    rebound up and to the right.  In "T" size paddle games, if the ball hits the middle
+	    of the paddle, it will rebound straight up.
+	    
+	  </p><p>
+	    
+	    Hitting a block in the bottom row of the wall is worth 1 point.  The middle row blocks
+	    are worth 2 points, and the top row is worth 3 points.  If the game was started in
+	    slow mode, it will switch to fast mode when the top row is hit.  If a wall is completely
+	    destroyed, it will immediately be replaced with a new wall.
+	    
+	  </p><p>
+	    
+	    Whenever the ball is missed, the game screen will switch to information mode.  It will
+	    display the number of balls left and the current score.  Press GO to switch back to
+	    game mode, and then press GO again to start the next ball.  When the final ball is
+	    missed, the final score is displayed.  Pressing GO will then switch the game back to
+	    the initial option selection mode.
+	    
+	</p></small><p><small>
+	    
+	    NOTE:  The game's original on/off switch is not simulated - the simulator is always "on".
+	    To simulate the effect of turning the game off and back on (to abandon a game that's not
+	    going well), use the browser's refresh button.
+	    
+	  </small>
+	</p>
+      </div>
+      <div id="right-panel" class="hidden">
+  <small>
+    Note: Simulator JavaScript tested against IE6, IE7 and Firefox.  It has been reported not to
+    work with a Mac Safari browser, and may not work with others.  User assumes all risk.
+  </small>
+  
+  <br><br>
+  
+  <big><b>Simulation Options</b></big>
+  <br>
+  <input type="checkbox" id="chkVapor" name="chkVapor" checked="">Show "Vapor Trails"
+  <br>
+  <input type="checkbox" id="chkHalf" name="chkHalf">Run at Half Speed
+  <br>
+  <small>Contrast:</small>
+  <input type="radio" id="rad0" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;gainsboro&#39;">
+  <input type="radio" id="rad1" name="radGrid" checked="" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;lightgrey&#39;">
+  <input type="radio" id="rad2" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;silver&#39;">
+  <input type="radio" id="rad3" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;darkgray&#39;">
+  <input type="radio" id="rad4" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;gray&#39;">
+  <input type="radio" id="rad5" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;dimgray&#39;">
+  <input type="radio" id="rad6" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;black&#39;">
+  <br>
+  <!-- LKS -->
+  <small>Mouse sensitivity:</small>
+  <input type="radio" id="ms0" name="mouseSense" onclick="javascript:MouseSensitivity=0;">
+  <input type="radio" id="ms1" name="mouseSense" checked="" onclick="javascript:MouseSensitivity=1;">
+  <input type="radio" id="ms2" name="mouseSense" onclick="javascript:MouseSensitivity=2;">
+  <input type="radio" id="ms3" name="mouseSense" onclick="javascript:MouseSensitivity=3;">
+  <input type="radio" id="ms4" name="mouseSense" onclick="javascript:MouseSensitivity=4;">
+  <br>
+  <small>
+    <br>
+    Mouse Sensitivity added by Lee K. Seitz.
+    <br>
+  </small>
+  <br>
+  <big><b>Links</b></big>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroBlockBug.htm">Bug Report and Versions</a>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroSimProject.htm">Microvision Simulation Home Page</a>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroBowlSim.htm">Bowling</a>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroPinSim.htm">Pinball</a>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroSlotsSim.htm">Vegas Slots</a>
+  <br>
+  <a href="http://eichler.byethost11.com/microvision/MicroPhaserSim.htm">Phaser Strike</a>
+  <br>
+  <a href="http://www.retro-net.de/amivisi/">German Phaser Strike Program</a>
+  <br><br>
+  Links to other simulated Microvision games will go here when (if) they get written
+
+      <p>
+      <a href="http://eichler.byethost11.com/microvision/MicroSimProject.htm">Javascript simulator written by Bob Eichler</a>
+    <p>
+      <a href="https://www.raphkoster.com/2017/05/07/microvision-emulator-release/">A full Microvision emulator for Windows</a>
+
+      </div>
+      
+      <script language="JavaScript1.2">
+	
+	CurrentState='SettingOptions';
+	var IE = document.all?true:false;
+	if (!IE) document.captureEvents(Event.MOUSEMOVE)
+	document.onmousemove = RespondToMouse; // getMouseXY;
+	
+      </script>
+</body></html>
