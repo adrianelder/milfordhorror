@@ -5,6 +5,8 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-image: url("/assets/microvision-bg.png");
+    background-size: cover;
 }
 .container {
     width: 100%;
