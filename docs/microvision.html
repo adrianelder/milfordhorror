@@ -434,7 +434,8 @@
 	    RespondToMouse(e.touches[0]);
 	};
 	document.ontouchstart = (e) => {
-	    if (e.changedTouches.some((t) => t.target.id === 'go-button')) {
+	    if (e.touches.length > 1 &&
+		Array.from(e.changedTouches).some((t) => t.target.id === 'go-button')) {
 		Go();
 	    }
 	};
