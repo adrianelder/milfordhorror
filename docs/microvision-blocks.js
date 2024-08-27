@@ -36,7 +36,7 @@ function FormStartUp() {
   oldr = -1
   oldc = -1
   DiminishPaddleTimer();
-  MouseSensitivity=1;  // LKS
+  MouseSensitivity=4;  // LKS
   //UpdateStatus(); //LKS
 }
 
