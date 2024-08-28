@@ -256,11 +256,11 @@
 		      <td align="center">
 			<br>
 			&nbsp;
-			<input type="button" value="BALLS" onclick="ChangeTotalBallCount()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
+			<input type="button" value="BALLS" id="balls-button" onclick="ChangeTotalBallCount()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
 			&nbsp;
-			<input type="button" value="SPEED" onclick="ChangeSpeed()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
+			<input type="button" value="SPEED" id="speed-button" onclick="ChangeSpeed()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
 			&nbsp;
-			<input type="button" value="PADDLE" onclick="ChangePaddleSize()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
+			<input type="button" value="PADDLE" id="paddle-button" onclick="ChangePaddleSize()" style="background-color: #4b80d9; color: white; font-size: 8pt; width: 50px">
 			&nbsp;
 		      </td>
 		    </tr>
@@ -434,9 +434,19 @@
 	    RespondToMouse(e.touches[0]);
 	};
 	document.ontouchstart = (e) => {
-	    if (e.touches.length > 1 &&
-		Array.from(e.changedTouches).some((t) => t.target.id === 'go-button')) {
+	    const touches = Array.from(e.changedTouches);
+	    if (touches.length < 2) return;
+	    if (touches.some((t) => t.target.id === 'go-button')) {
 		Go();
+	    }
+	    if (touches.some((t) => t.target.id === 'balls-button')) {
+		ChangeTotalBallCount();
+	    }
+	    if (touches.some((t) => t.target.id === 'speed-button')) {
+		ChangeSpeed();
+	    }
+	    if (touches.some((t) => t.target.id === 'paddle-button')) {
+		ChangePaddleSize();
 	    }
 	};
 	
