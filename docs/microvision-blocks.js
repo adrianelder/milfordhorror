@@ -833,3 +833,11 @@ function UpdateStatus() {
   defaultStatus = s;
 }
 
+
+function ShowInfo() {
+    document.getElementById('info-panel').classList.remove('hidden');
+}
+
+function HideInfo() {
+    document.getElementById('info-panel').classList.add('hidden');
+}
