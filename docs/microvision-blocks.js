@@ -17,7 +17,7 @@ function FormStartUp() {
   ChangeTotalBallCount();
   FastSpeedDelay=50;
   SlowSpeedDelay=100;
-  StartSpeed = SlowSpeedDelay;
+  StartSpeed = FastSpeedDelay;
   ChangeSpeed();
   PaddleSize=2;
   ChangePaddleSize();
