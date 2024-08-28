@@ -434,7 +434,7 @@
 	    RespondToMouse(e.touches[0]);
 	};
 	document.ontouchstart = (e) => {
-	    if (e.changedTouches.length < 2) return;
+	    if (e.touches.length < 2) return;
 	    const changedTouches = Array.from(e.changedTouches);
 	    if (changedTouches.some((t) => t.target.id === 'go-button')) {
 		Go();
