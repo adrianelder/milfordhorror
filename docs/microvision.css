@@ -16,3 +16,7 @@ body {
     justify-content: center;
 }
 html, body {touch-action: none;}
+input[type=button] {
+    border-radius: 3px;
+    border-width: 0;
+}
