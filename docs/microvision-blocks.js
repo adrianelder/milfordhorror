@@ -15,8 +15,8 @@ function FormStartUp() {
   CurrentState='SettingOptions';
   TotalBallCount = 9;
   ChangeTotalBallCount();
-  FastSpeedDelay=50;
-  SlowSpeedDelay=100;
+  FastSpeedDelay=80;
+  SlowSpeedDelay=160;
   StartSpeed = FastSpeedDelay;
   ChangeSpeed();
   PaddleSize=2;
