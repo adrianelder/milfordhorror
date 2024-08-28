@@ -8,7 +8,9 @@
     
     <script language="javascript" src="microvision-blocks.js"></script>
     <link href="microvision.css" rel="stylesheet" type="text/css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
   </head>
   <body onload="FormStartUp();">
     <button id="info-button" class="ui-button" onclick="ShowInfo()">
@@ -16,6 +18,8 @@
     </button>
     <div class="container">
       <div id="player-panel">
+	<div id="notice-before" class="notice"><div class="notice-text">Press GO to start!</div></div>
+	<div id="notice-ready" class="notice hidden"><div class="notice-text">Move the paddle by dragging left/right anywhere on the screen.<br>Press GO again to start!</div></div>
 	<table cellspacing="0" cellpadding="0" border="0" id="CartridgeLayout" name="CartridgeLayout" width="250px" align="center">
 	  
 	  <tbody><tr height="25px" valign="middle">
@@ -309,6 +313,16 @@
     </button>
 
       <div class="info-panel-content">
+
+	All credit for this Microvision Blockbuster simulator goes to the
+	  <a href="http://eichler.byethost11.com/microvision/MicroSimProject.htm">Javascript simulator written by Bob Eichler</a>. This is simply a modified version of that application to run on modern phones.
+
+	<p>
+	  For a more full-featured emulator of the Microvision hardware, there is a 
+		<a href="https://www.raphkoster.com/2017/05/07/microvision-emulator-release/">Microvision emulator for Windows</a>
+
+	<p>The following instructions are from Bob Eichler and will give some context on the game.
+
 	<h3>Blockbuster Instructions</h3>
 	
 	<small>
@@ -370,11 +384,6 @@
 	  </small>
 	</p>
 	
-  <small>
-    Note: Simulator JavaScript tested against IE6, IE7 and Firefox.  It has been reported not to
-    work with a Mac Safari browser, and may not work with others.  User assumes all risk.
-  </small>
-  
   <br><br>
   
   <big><b>Simulation Options</b></big>
@@ -392,44 +401,8 @@
   <input type="radio" id="rad5" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;dimgray&#39;">
   <input type="radio" id="rad6" name="radGrid" onclick="document.getElementById(&#39;ScreenTable&#39;).style.backgroundColor=&#39;black&#39;">
   <br>
-  <!-- LKS -->
-  <small>Mouse sensitivity:</small>
-  <input type="radio" id="ms0" name="mouseSense" onclick="javascript:MouseSensitivity=0;">
-  <input type="radio" id="ms1" name="mouseSense" checked="" onclick="javascript:MouseSensitivity=1;">
-  <input type="radio" id="ms2" name="mouseSense" onclick="javascript:MouseSensitivity=2;">
-  <input type="radio" id="ms3" name="mouseSense" onclick="javascript:MouseSensitivity=3;">
-  <input type="radio" id="ms4" name="mouseSense" onclick="javascript:MouseSensitivity=4;">
-  <br>
-  <small>
-    <br>
-    Mouse Sensitivity added by Lee K. Seitz.
-    <br>
-  </small>
-  <br>
-  <big><b>Links</b></big>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroBlockBug.htm">Bug Report and Versions</a>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroSimProject.htm">Microvision Simulation Home Page</a>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroBowlSim.htm">Bowling</a>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroPinSim.htm">Pinball</a>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroSlotsSim.htm">Vegas Slots</a>
-  <br>
-  <a href="http://eichler.byethost11.com/microvision/MicroPhaserSim.htm">Phaser Strike</a>
-  <br>
-  <a href="http://www.retro-net.de/amivisi/">German Phaser Strike Program</a>
-  <br><br>
-  Links to other simulated Microvision games will go here when (if) they get written
-
-      <p>
-      <a href="http://eichler.byethost11.com/microvision/MicroSimProject.htm">Javascript simulator written by Bob Eichler</a>
-    <p>
-      <a href="https://www.raphkoster.com/2017/05/07/microvision-emulator-release/">A full Microvision emulator for Windows</a>
       </div>
-      </div>
+    </div>
       
       <script language="JavaScript1.2">
 	

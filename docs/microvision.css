@@ -52,3 +52,23 @@ input[type=button] {
     overflow: scroll;
 }
 
+.notice {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.notice-text {
+    display: inline-block;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #ccc;
+    color: #555;
+    font-size: 24px;
+    padding: 10px;
+}

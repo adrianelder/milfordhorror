@@ -16,7 +16,7 @@ function FormStartUp() {
   TotalBallCount = 9;
   ChangeTotalBallCount();
   FastSpeedDelay=80;
-  SlowSpeedDelay=160;
+  SlowSpeedDelay=130;
   StartSpeed = FastSpeedDelay;
   ChangeSpeed();
   PaddleSize=2;
@@ -387,6 +387,7 @@ function Go() {
     PaddlePos=7;
     RepositionPaddle(8);
     CurrentState='ReadyToPlay';
+    UpdateNotice();
     Score=0;
     //UpdateStatus(); //LKS
     return;
@@ -406,6 +407,7 @@ function Go() {
       BallsLeft=TotalBallCount-1;
       Score=0;
       CurrentState='Playing';
+      UpdateNotice();	
 
    //TESTCODE!!!
    // ClearScreen();
@@ -436,6 +438,7 @@ function Go() {
       ContinueMoving=true;
       BallSpeed=StartSpeed;
       CurrentState='Playing';
+      UpdateNotice();
       StartTheTimer();
     }
   }
@@ -465,6 +468,7 @@ function Go() {
       if (PaddleSize==3 && PaddlePos < 16)
         CellOn(16, PaddlePos+1);
       CurrentState='Playing';
+      UpdateNotice();
     }
   }
 
@@ -833,6 +837,12 @@ function UpdateStatus() {
   defaultStatus = s;
 }
 
+function UpdateNotice() {
+    document.getElementById('notice-before').classList.toggle(
+	'hidden', CurrentState!='SettingOptions');
+    document.getElementById('notice-ready').classList.toggle(
+	'hidden', CurrentState!='ReadyToPlay');
+}
 
 function ShowInfo() {
     document.getElementById('info-panel').classList.remove('hidden');
