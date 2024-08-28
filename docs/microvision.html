@@ -434,18 +434,18 @@
 	    RespondToMouse(e.touches[0]);
 	};
 	document.ontouchstart = (e) => {
+	    if (e.changedTouches.length < 2) return;
 	    const touches = Array.from(e.changedTouches);
-	    if (touches.length < 2) return;
 	    if (touches.some((t) => t.target.id === 'go-button')) {
 		Go();
 	    }
-	    if (touches.some((t) => t.target.id === 'balls-button')) {
+	    else if (touches.some((t) => t.target.id === 'balls-button')) {
 		ChangeTotalBallCount();
 	    }
-	    if (touches.some((t) => t.target.id === 'speed-button')) {
+	    else if (touches.some((t) => t.target.id === 'speed-button')) {
 		ChangeSpeed();
 	    }
-	    if (touches.some((t) => t.target.id === 'paddle-button')) {
+	    else if (touches.some((t) => t.target.id === 'paddle-button')) {
 		ChangePaddleSize();
 	    }
 	};
