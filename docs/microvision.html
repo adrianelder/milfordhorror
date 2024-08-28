@@ -435,17 +435,17 @@
 	};
 	document.ontouchstart = (e) => {
 	    if (e.changedTouches.length < 2) return;
-	    const touches = Array.from(e.changedTouches);
-	    if (touches.some((t) => t.target.id === 'go-button')) {
+	    const changedTouches = Array.from(e.changedTouches);
+	    if (changedTouches.some((t) => t.target.id === 'go-button')) {
 		Go();
 	    }
-	    else if (touches.some((t) => t.target.id === 'balls-button')) {
+	    else if (changedTouches.some((t) => t.target.id === 'balls-button')) {
 		ChangeTotalBallCount();
 	    }
-	    else if (touches.some((t) => t.target.id === 'speed-button')) {
+	    else if (changedTouches.some((t) => t.target.id === 'speed-button')) {
 		ChangeSpeed();
 	    }
-	    else if (touches.some((t) => t.target.id === 'paddle-button')) {
+	    else if (changedTouches.some((t) => t.target.id === 'paddle-button')) {
 		ChangePaddleSize();
 	    }
 	};
