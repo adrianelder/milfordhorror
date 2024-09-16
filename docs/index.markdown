@@ -6,10 +6,6 @@ layout: home
 ---
 
 <center>
-<img alt="Watch Friday the 13 Part 2 in the woods at night" src="/assets/F13Part2Banner.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #9a0201; color: white; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-friday-the-13th-part-2-tickets-944160789337?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">FRIDAY THE 13TH PART 2</span></a>
-
-<p style="margin-top:3rem;">
 <img alt="Watch Ticks in the woods at night" src="/assets/TicksBanner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #41865a; color: #ebef5d; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-at-night-ticks-tickets-1001404095607">GET TICKETS TO TICKS</a>
 
