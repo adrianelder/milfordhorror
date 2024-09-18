@@ -53,7 +53,7 @@ Feed Your Inner Monster at New England's # 1 Website for Halloween Events.
 <span style="font-size: 1.5rem;">Past Events</span>
   <div class="past-events">
     <div>
-      <img src="/assets/past-f12p2.jpg">
+      <img src="/assets/past-f13p2.jpg">
     </div>
     <div>
       <img src="/assets/past-thewitch.jpg">
