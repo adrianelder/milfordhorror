@@ -17,8 +17,6 @@ layout: home
 <img alt="Rocktober Bloodbath" src="/assets/RocktoberBloodbath2024.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #8cf4fd; color: #cd0101; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/rocktober-bloodbath-bands-and-horror-tickets-1032932979347?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">ROCKTOBER BLOODBATH</span></a>
 
-
-
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
 <p>
