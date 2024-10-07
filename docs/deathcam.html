@@ -1,16 +1,19 @@
 <html>
      <head>
-          <title>My Photo Booth</title>
+       <title>Milford Horror Omen Deathcam</title>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" type="image/x-icon" href="assets/faveicon.ico">
      <head>
      <body>
           <center>
-          <video id="webcam" width="200" height="200"></video>
-          <br>
-          <input type="button" id="snapPicture" value="Snap A Picture!" />
-          <p> 
-          <canvas id="capture" style="display:none;"></canvas>
-          <img id="canvasImg" alt="right click to save" style="display: none;">
-          <script src = "deathcam.js"></script>
+            <video id="webcam" width="400" height="400"></video>
+            <br>
+            <input type="button" id="snapPicture" value="Snap A Picture!" disabled="true" style="height: 70px;" />
+            <p> 
+              <canvas id="capture" style="display:none;"></canvas>
+              <img id="canvasImg" alt="right click to save" style="display: none;">
+              <script src = "deathcam.js"></script>
           </center>          
      </body>
 </html>

@@ -3,14 +3,23 @@ photoButton.addEventListener('click', picCapture, false);
 const video = document.querySelector("#webcam");
 const WIDTH = 600;
 const HEIGHT = 400;
-
+const trackSize = {};
 navigator.mediaDevices
     .getUserMedia({
-	video:true,
+	video: {
+	    width: { max: 400 },
+	    height: { max: 400 },
+	},
 	audio:false,
 	facingMode: 'user',
     })
     .then((mediaStream) => {
+	const videoTrackSettings = mediaStream.getVideoTracks()[0].getSettings();
+	trackSize.width = videoTrackSettings.width;
+	trackSize.height = videoTrackSettings.height;
+	debugger;
+	photoButton.disabled = false;
+
 	video.srcObject = mediaStream;
 	video.onloadedmetadata = () => {
 	    video.play();
@@ -23,10 +32,10 @@ navigator.mediaDevices
 
 function picCapture(){
      const picture = document.getElementById('capture'),
-          context = picture.getContext('2d');
+     context = picture.getContext('2d');
 
-     picture.width = WIDTH;
-     picture.height = HEIGHT;
+     picture.width = trackSize.width;
+     picture.height = trackSize.height;
      context.drawImage(video, 0, 0, picture.width, picture.height);
 
     context.strokeStyle = 'rgba(0,0,0,0.5)';
@@ -52,8 +61,8 @@ function picCapture(){
 
 
 function createRandomPoint() {
-    const x = Math.floor(Math.random() * WIDTH);
-    const y = Math.floor(Math.random() * HEIGHT);
+    const x = Math.floor(Math.random() * trackSize.width);
+    const y = Math.floor(Math.random() * trackSize.height);
     return {x, y};
 }
 
