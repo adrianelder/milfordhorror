@@ -26,8 +26,7 @@ navigator.mediaDevices
 	};
     })
     .catch((err) => {
-	// always check for errors at the end.
-	console.error(`${err.name}: ${err.message}`);
+	alert(`${err.name}: ${err.message}`);
     });
 
 function picCapture(){
