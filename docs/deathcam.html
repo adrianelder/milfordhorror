@@ -10,6 +10,7 @@
 	     width: 100%;
 	     flex-direction: column;
 	     align-items: center;
+	     justify-content: space-evenly;
 	 }
 	 body {
 	     background: black;
@@ -53,9 +54,9 @@
        </style>
      <head>
      <body>
-       <video class="image" id="webcam" width="400" height="400"></video>
+       <video class="image" id="webcam" width="350" height="350"></video>
        <div class="button-row">
-	 <button id="snapPicture" disabled="true">Take a picture</button>
+	 <button id="snapPicture" disabled="true">Take picture</button>
 	 <button id="download" style="display: none;">Download picture</button>
        </div>
        <canvas class="image" id="capture" style="display:none;"></canvas>

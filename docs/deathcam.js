@@ -3,15 +3,13 @@ photoButton.addEventListener('click', picCapture, false);
 const downloadButton = document.getElementById('download');
 downloadButton.addEventListener('click', downloadImage, false);
 const video = document.querySelector("#webcam");
-const WIDTH = 600;
-const HEIGHT = 400;
 const trackSize = {};
 
 navigator.mediaDevices
     .getUserMedia({
 	video: {
-	    width: {max: 400},
-	    height: {max: 400},
+	    width: {max: 350},
+	    height: {max: 350},
 	},
 	audio:false,
 	facingMode: 'user',
@@ -22,6 +20,8 @@ navigator.mediaDevices
 	trackSize.height = videoTrackSettings.height;
 	photoButton.disabled = false;
 	video.srcObject = mediaStream;
+	video.width = trackSize.width;
+	video.height = trackSize.height;
 	video.onloadedmetadata = () => {
 	    video.play();
 	};
