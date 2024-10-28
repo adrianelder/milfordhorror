@@ -6,10 +6,6 @@ layout: home
 ---
 
 <center>
-<img alt="Rocktober Bloodbath" src="/assets/RocktoberBloodbath2024.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #8cf4fd; color: #cd0101; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/rocktober-bloodbath-bands-and-horror-tickets-1032932979347?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">ROCKTOBER BLOODBATH</span></a>
-
-<p style="margin-top:3rem;">
 <img alt="Skate with The Thing" src="/assets/TheThingBanner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #13b1d9; color: #ffffff; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-the-thing-in-an-ice-rink-tickets-1041949808927?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">THE THING</span></a>
 
