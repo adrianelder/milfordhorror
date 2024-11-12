@@ -6,8 +6,7 @@ layout: home
 ---
 
 <center>
-<img alt="Skate with The Thing" src="/assets/TheThingBanner.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #13b1d9; color: #ffffff; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-the-thing-in-an-ice-rink-tickets-1041949808927?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">THE THING</span></a>
+<p><span style="margin-top: 1rem; font-size: 1.5rem; color: #ffffff; padding: 5px;">Thank you to everyone that made 2024 a special year! We'll be back in 2025 with some new events! Reach out to <a href="mailto:MilfordHorror@gmail.com">MilfordHorror@gmail.com</a></span>
 
 
 
@@ -50,6 +49,18 @@ Feed Your Inner Monster at New England's # 1 Website for Halloween Events.
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Past Events</span>
   <div class="past-events">
+    <div>
+      <img src="/assets/past-thing.jpg">
+    </div>
+    <div>
+      <img src="/assets/past-rocktober.jpg">
+    </div>
+    <div>
+      <img src="/assets/past-omen.jpg">
+    </div>
+    <div>
+      <img src="/assets/past-ticks.jpg">
+    </div>
     <div>
       <img src="/assets/past-f13p2.jpg">
     </div>
