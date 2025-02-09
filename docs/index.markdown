@@ -6,9 +6,8 @@ layout: home
 ---
 
 <center>
-<p><span style="margin-top: 1rem; font-size: 1.5rem; color: #ffffff; padding: 5px;">Thank you to everyone that made 2024 a special year! We'll be back in 2025 with some new events! Reach out to <a href="mailto:MilfordHorror@gmail.com">MilfordHorror@gmail.com</a></span>
-
-
+<img alt="Watch Martyrs in a Church" src="/assets/MartyrsBanner.png">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #333333; color: #cd0101; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-martyrs-in-a-church-tickets-1244093129039?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">MARTYRS</span></a>
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
