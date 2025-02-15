@@ -6,7 +6,7 @@ layout: home
 ---
 
 <center>
-<img alt="Watch Grabbers in a Bar" src="/assets/GrabberssBanner.png">
+<img alt="Watch Grabbers in a Bar" src="/assets/GrabbersBanner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #333333; color: #93ffc6; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/grabbers-at-a-bar-tickets-1250058030219?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">GRABBERS</span></a>
 
 <p style="margin-top:3rem;">
