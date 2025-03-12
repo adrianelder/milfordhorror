@@ -11,7 +11,7 @@ layout: home
 
 <p style="margin-top:3rem;">
 <img alt="Civerous in Milford" src="/assets/CiverousBanner.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #333333; color: #c30bdb; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/civerous-in-milford-tickets-1271335732399?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">CIVEROUS</span></a>
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c30bdb; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/civerous-in-milford-tickets-1271335732399?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">CIVEROUS</span></a>
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
