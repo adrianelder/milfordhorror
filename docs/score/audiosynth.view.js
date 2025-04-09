@@ -319,20 +319,25 @@ function AudioSynthView(score) {
   var fnPlaySong = function(arr) {
 
     if(arr.length>0) {
-
-      var noteLen = 1000*(1/parseInt(arr[0][1]));
-      if(!(arr[0][0] instanceof Array)) {
-	arr[0][0] = [arr[0][0]];
-      }
-      var i = arr[0][0].length;
+      const head = arr.shift();
+      var noteLen = 1000*(1/parseInt(head[1]));
+      const def = head[0] instanceof Array ? head[0] : [head[0];
+      var i = def.length;
       var keys = [];
       while(i--) {
-	keys.unshift(reverseLookup[arr[0][0][i]]);
+	keys.unshift(reverseLookup[def[i]]);
 	fnPlayKeyboard({keyCode:keys[0]});
       }
       arr.shift();
-      setTimeout(function(array, val){ return function() { var i = val.length; while(i--) { fnRemoveKeyBinding({keyCode:val[i]}); } fnPlaySong(array); } }(arr, keys), noteLen);
-
+      setTimeout(function(array, val){
+	return function() {
+	  var i = val.length;
+	  while(i--) {
+	    fnRemoveKeyBinding({keyCode:val[i]});
+	  }
+	  fnPlaySong(array);
+	}
+      }(arr, keys), noteLen);
     }
 
   };
@@ -340,7 +345,10 @@ function AudioSynthView(score) {
   // Set up global event listeners
   document.getElementById('testbutton').onclick = () => {
     fnPlaySong([
-      ['E,0', 8],
+      [['E,0', 'C,0', 'A,0'], 8],
+      [['E,0', 'C,0', 'A,0'], 8],
+      [['E,0', 'C,0', 'A,0'], 8],
+      [['E,0', 'C,0', 'A,0'], 8],
       ['D,0', 8],
       ['C,0', 2],
       ['C,0', 8],
