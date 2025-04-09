@@ -321,7 +321,7 @@ function AudioSynthView(score) {
     if(arr.length>0) {
       const head = arr.shift();
       var noteLen = 1000*(1/parseInt(head[1]));
-      const def = head[0] instanceof Array ? head[0] : [head[0];
+      const def = (head[0] instanceof Array) ? head[0] : [head[0];
       var i = def.length;
       var keys = [];
       while(i--) {
