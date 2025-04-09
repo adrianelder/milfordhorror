@@ -199,7 +199,14 @@ function AudioSynthView(score) {
 	  // 	'<span name="OCTAVE_LABEL" value="' + i + '">' + (__octave + parseInt(i)) + '</span>' + (n.substr(1,1)?n.substr(1,1):'');
 	  // thisKey.appendChild(label);
 	  thisKey.setAttribute('ID', 'KEY_' + n + ',' + i);
-	  thisKey.addEventListener(evtListener[0], (function(_temp) { return function() { fnPlayKeyboard({keyCode:_temp}); } })(reverseLookup[n + ',' + i]));
+	  thisKey.addEventListener(evtListener[0], (function(_temp) {
+	    return function() {
+	      fnPlayKeyboard({keyCode:_temp});
+	      if (keyboard[e.keyCode]) {
+		score.pending.push([keyboard[e.keyCode], 1]);
+	      }
+	    }
+	  })(reverseLookup[n + ',' + i]));
 	  visualKeyboard[n + ',' + i] = thisKey;
 	  visualKeyboard.appendChild(thisKey);
 	  iKeys++;
@@ -222,7 +229,6 @@ function AudioSynthView(score) {
     container.addEventListener('loadeddata', function(e) { e.target.play(); });
     container.autoplay = false;
     container.setAttribute('type', 'audio/wav');
-    /*document.body.appendChild(container);*/
     container.load();
     return container;
 
@@ -239,48 +245,6 @@ function AudioSynthView(score) {
       }
     }
     keysPressed.push(e.keyCode);
-
-    switch(e.keyCode) {
-	// space
-      case 16:
-	break;
-	fnPlaySong([
-	  ['E,0', 8],
-	  ['D,0', 8],
-	  ['C,0', 2],
-	  ['C,0', 8],
-	  ['D,0', 8],
-	  ['C,0', 8],
-	  ['E,0', 8],
-	  ['D,0', 1],
-	  ['C,0', 8],
-	  ['D,0', 8],
-	  ['E,0', 2],
-	  ['A,0', 8],
-	  ['G,0', 8],
-	  ['E,0', 8],
-	  ['C,0', 8],
-	  ['D,0', 1],
-	  ['A,0', 8],
-	  ['B,0', 8],
-	  ['C,1', 2],
-	  ['B,0', 8],
-	  ['C,1', 8],
-	  ['D,1', 8],
-	  ['C,1', 8],
-	  ['A,0', 1],
-	  ['G,0', 8],
-	  ['A,0', 8],
-	  ['B,0', 2],
-	  ['C,1', 8],
-	  ['B,0', 8],
-	  ['A,0', 8],
-	  ['G,0', 8],
-	  ['A,0', 1]
-	]);
-	break;
-
-    }
 
     if(keyboard[e.keyCode]) {
       if(visualKeyboard[keyboard[e.keyCode]]) {
@@ -328,7 +292,6 @@ function AudioSynthView(score) {
 	keys.unshift(reverseLookup[def[i]]);
 	fnPlayKeyboard({keyCode:keys[0]});
       }
-      arr.shift();
       setTimeout(function(array, val){
 	return function() {
 	  var i = val.length;
@@ -345,41 +308,10 @@ function AudioSynthView(score) {
   // Set up global event listeners
   document.getElementById('testbutton').onclick = () => {
     fnPlaySong([
-      [['E,0', 'C,0', 'A,0'], 8],
-      [['E,0', 'C,0', 'A,0'], 8],
-      [['E,0', 'C,0', 'A,0'], 8],
-      [['E,0', 'C,0', 'A,0'], 8],
+      [['E,0', 'C,0', 'A,0'], 1],
+      [['E,0', 'C,0', 'A,0'], 1],
       ['D,0', 8],
       ['C,0', 2],
-      ['C,0', 8],
-      ['D,0', 8],
-      ['C,0', 8],
-      ['E,0', 8],
-      ['D,0', 1],
-      ['C,0', 8],
-      ['D,0', 8],
-      ['E,0', 2],
-      ['A,0', 8],
-      ['G,0', 8],
-      ['E,0', 8],
-      ['C,0', 8],
-      ['D,0', 1],
-      ['A,0', 8],
-      ['B,0', 8],
-      ['C,1', 2],
-      ['B,0', 8],
-      ['C,1', 8],
-      ['D,1', 8],
-      ['C,1', 8],
-      ['A,0', 1],
-      ['G,0', 8],
-      ['A,0', 8],
-      ['B,0', 2],
-      ['C,1', 8],
-      ['B,0', 8],
-      ['A,0', 8],
-      ['G,0', 8],
-      ['A,0', 1]
     ]);
   };
   window.addEventListener('keydown', fnPlayKeyboard);
