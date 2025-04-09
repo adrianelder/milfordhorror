@@ -90,7 +90,6 @@ Feed Your Inner Monster at New England's # 1 Website for Halloween Events.
     </div>
 </div>
 
-  
   <script type="text/javascript">
     $(document).ready(function(){
       $('.past-events').slick({
