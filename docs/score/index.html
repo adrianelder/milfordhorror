@@ -77,7 +77,13 @@
 	.small { font-size: 20px; }
 
 	.keyboard-options { width: auto; text-align: center; font-size: 12px; font-weight: 200; }
-
+	@media (min-aspect-ratio: 8/5) {
+	    .keyboard-options {
+		position: fixed;
+		left: 10px;
+		top: 10px;
+	    }
+	}
 	.keyboard-holder { margin: 30px auto; height: 25vh; max-height: 200px; position:relative; user-select:none; -webkit-user-select:none;-moz-user-select:none;-o-user-select:none; }
         #start {
             position: fixed;
@@ -126,6 +132,14 @@
     <div id="help-button"><div>?</div></div>
     <div id="help-dialog" style="display: none;">
       <div id="help-close"><div>X</div></div>
+
+      This 30 second clip from Nosferatu will loop indefinitely. Each time you play a note it will be added to the score, and you will hear that when it loops. You may continue to add to your score until you're happy with it.
+
+      <p>Once you have something you're happy with, you may hit the "share" button to sendshare a special URL to the clip with your score.
+
+      <p>If at any point you want to start over, hit "reset".
+	
+      <p>
       Keyboard adapted from <a href="https://keithwhor.com/music/">https://keithwhor.com/music/</a>.
       
     </div>
@@ -140,10 +154,16 @@
         <option value="2">Acoustic Guitar</option>
         <option value="3">Synth</option>
       </select>
+      <br/>
       <button id="reset">Reset</button>
       <button id="share">Share</button>
       </div>
-      <button id="start">Tap anywhere to start adding your own score to this clip from Nosferatu</button>
+      <button id="start">
+	Tap anywhere to start adding your own score to this clip from Nosferatu
+
+	<p>
+	  The clip will loop and you may continue to add to your score. Once you have a something you're happy with, share it!
+      </button>
 
     <script src="app.js"></script>
   </body>
