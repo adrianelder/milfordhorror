@@ -1,7 +1,18 @@
+const score = {
+  commited: [],
+  pending: [],
+};
+
+function merge(a, b) {
+
+}
+const a = new AudioSynthView(score);
+a.draw();
 const el = document.querySelector('video');
+el.onplay = function() {
+  a.start();
+};
 el.onended = function (e) {
-  //Do whatever you want
+  a.start();
   el.play();
 }
-const a = new AudioSynthView();
-a.draw();

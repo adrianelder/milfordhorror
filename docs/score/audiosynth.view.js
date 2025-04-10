@@ -1,5 +1,6 @@
 function AudioSynthView(score) {
-
+  let startTime = null;
+  let playingSong = false;
   var isMobile = !!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
   if(isMobile) { var evtListener = ['touchstart', 'touchend']; } else { var evtListener = ['mousedown', 'mouseup']; }
 
@@ -199,11 +200,11 @@ function AudioSynthView(score) {
 	  // 	'<span name="OCTAVE_LABEL" value="' + i + '">' + (__octave + parseInt(i)) + '</span>' + (n.substr(1,1)?n.substr(1,1):'');
 	  // thisKey.appendChild(label);
 	  thisKey.setAttribute('ID', 'KEY_' + n + ',' + i);
-	  thisKey.addEventListener(evtListener[0], (function(_temp) {
+	  thisKey.addEventListener(evtListener[0], (function(keyCode) {
 	    return function() {
-	      fnPlayKeyboard({keyCode:_temp});
-	      if (keyboard[e.keyCode]) {
-		score.pending.push([keyboard[e.keyCode], 1]);
+	      fnPlayKeyboard({keyCode});
+	      if (keyboard[keyCode]) {
+		score.pending.push([keyboard[keyCode], Date.now() - startTime]);
 	      }
 	    }
 	  })(reverseLookup[n + ',' + i]));
@@ -280,11 +281,18 @@ function AudioSynthView(score) {
 
   }
 
-  var fnPlaySong = function(arr) {
+  let playWholeSong = function(arr) {
+    if (playingSong) return;
+    startTime = Date.now();
+    fnPlaySong(arr);
+  }
 
+  var fnPlaySong = function(arr) {
     if(arr.length>0) {
+      playingSong = true;
       const head = arr.shift();
-      var noteLen = 1000*(1/parseInt(head[1]));
+      const nextNoteTime = head[1] + startTime;
+      //var noteLen = 1000*(1/parseInt(head[1]));
       const def = (head[0] instanceof Array) ? head[0] : [head[0]];
       var i = def.length;
       var keys = [];
@@ -298,26 +306,35 @@ function AudioSynthView(score) {
 	  while(i--) {
 	    fnRemoveKeyBinding({keyCode:val[i]});
 	  }
+	}
+      }(arr, keys), 125);
+      setTimeout(function(array){
+	return function() {
 	  fnPlaySong(array);
 	}
-      }(arr, keys), noteLen);
+      }(arr), nextNoteTime - Date.now());
+    } else {
+      playingSong = false;
     }
+  };
 
+  let fnStartPlayback = function() {
+    score.commited = [...score.commited, ...score.pending];
+    score.commited.sort(function (a, b) {
+      return a[1] - b[1];
+    });
+    score.pending = [];
+    playWholeSong(score.commited);
   };
 
   // Set up global event listeners
-  document.getElementById('testbutton').onclick = () => {
-    fnPlaySong([
-      [['E,0', 'C,0', 'A,0'], 1],
-      [['E,0', 'C,0', 'A,0'], 1],
-      ['D,0', 8],
-      ['C,0', 2],
-    ]);
-  };
   window.addEventListener('keydown', fnPlayKeyboard);
   window.addEventListener('keyup', fnRemoveKeyBinding);
   Object.defineProperty(this, 'draw', {
     value: fnCreateKeyboard
   });
 
+  Object.defineProperty(this, 'start', {
+    value: fnStartPlayback
+  });
 }
