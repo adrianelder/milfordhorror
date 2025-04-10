@@ -27,7 +27,8 @@ const a = new AudioSynthView(score);
 a.draw();
 const video = document.querySelector('video');
 const start = document.querySelector('#start');
-start.onclick = function () {
+start.onclick = function (e) {
+  e.preventDefault();
   a.start();
   video.play();
   start.style.display = 'none';
