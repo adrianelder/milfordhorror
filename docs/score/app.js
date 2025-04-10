@@ -1,18 +1,40 @@
+
+function parseSong(serialized) {
+  return serialized.length > 0 ? JSON.parse(LZString.decompressFromBase64(serialized)) : [];
+}
+
+function serializeSong(json) {
+  return LZString.compressToBase64(JSON.stringify(json));
+}
+
 const score = {
-  commited: [],
+  commited: parseSong(decodeURI(location.hash).slice(1)),
   pending: [],
 };
-
-function merge(a, b) {
-
-}
 const a = new AudioSynthView(score);
 a.draw();
-const el = document.querySelector('video');
-el.onplay = function() {
+const video = document.querySelector('video');
+const start = document.querySelector('#start');
+start.onclick = function () {
   a.start();
-};
-el.onended = function (e) {
-  a.start();
-  el.play();
+  video.play();
+  start.style.display = 'none';
 }
+video.onended = function (e) {
+  a.start();
+  location.hash = serializeSong(score.commited);
+  video.play();
+}
+const reset = document.querySelector('#reset');
+reset.onclick = function () {
+  video.pause();
+  video.currentTime = 0;
+  a.stop();
+
+  score.commited = [];
+  score.pending = [];
+  location.hash = '';
+
+  a.start();
+  video.play();
+};

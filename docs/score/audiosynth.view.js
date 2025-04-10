@@ -1,6 +1,7 @@
 function AudioSynthView(score) {
   let startTime = null;
   let playingSong = false;
+  let stopping = false;
   var isMobile = !!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
   if(isMobile) { var evtListener = ['touchstart', 'touchend']; } else { var evtListener = ['mousedown', 'mouseup']; }
 
@@ -283,13 +284,19 @@ function AudioSynthView(score) {
 
   let playWholeSong = function(arr) {
     if (playingSong) return;
+    playingSong = true;
     startTime = Date.now();
-    fnPlaySong(arr);
+    if(arr.length>0) {
+      setTimeout(() => {
+	fnPlaySong(arr);
+      }, arr[0][1]);
+    } else {
+      playingSong = false;
+    }
   }
 
   var fnPlaySong = function(arr) {
-    if(arr.length>0) {
-      playingSong = true;
+    if(arr.length>0 && !stopping) {
       const head = arr.shift();
       const nextNoteTime = head[1] + startTime;
       //var noteLen = 1000*(1/parseInt(head[1]));
@@ -315,17 +322,26 @@ function AudioSynthView(score) {
       }(arr), nextNoteTime - Date.now());
     } else {
       playingSong = false;
+      stopping = false;
     }
   };
 
   let fnStartPlayback = function() {
-    score.commited = [...score.commited, ...score.pending];
-    score.commited.sort(function (a, b) {
+    const tmp = [...score.commited, ...score.pending];
+    tmp.sort(function (a, b) {
       return a[1] - b[1];
     });
+    score.commited = tmp;
     score.pending = [];
-    playWholeSong(score.commited);
+    playWholeSong([...score.commited]);
   };
+
+  let fnStopPlayback = function() {
+    if (playingSong) {
+      stopping = true;
+    }
+  };
+
 
   // Set up global event listeners
   window.addEventListener('keydown', fnPlayKeyboard);
@@ -337,4 +353,9 @@ function AudioSynthView(score) {
   Object.defineProperty(this, 'start', {
     value: fnStartPlayback
   });
+
+  Object.defineProperty(this, 'stop', {
+    value: fnStopPlayback
+  });
+
 }

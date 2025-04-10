@@ -52,13 +52,22 @@
 	.keyboard-options { width: auto; text-align: center; font-size: 12px; font-weight: 200; }
 
 	.keyboard-holder { margin: 30px auto; height: 25vh; max-height: 200px; position:relative; user-select:none; -webkit-user-select:none;-moz-user-select:none;-o-user-select:none; }
+        #start {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
 
 </style>
     <script src="audiosynth.js"></script>
     <script src="audiosynth.view.js"></script>
+    <script src="lz-string.min.js"></script>
   </head>
   <body>
-    <video autoplay muted>
+    <video muted>
       <source src="test.mp4" type="video/mp4" />
     </video>
       <div ID="keyboard" class="keyboard-holder"></div>
@@ -69,7 +78,9 @@
         <option value="2">Acoustic Guitar</option>
         <option value="3">EDM, bro!</option>
       </select>
-    </div>
+      <button id="reset">Reset</button>
+      </div>
+      <button id="start">Start</button>
     <script src="app.js"></script>
   </body>
 </html>
