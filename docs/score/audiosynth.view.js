@@ -282,9 +282,9 @@ function AudioSynthView(score) {
 	  thisKey.addEventListener(evtListener[0], (function(keyCode) {
 	      return function(e) {
 		  e.preventDefault();
-		  fnPlayKeyboard({keyCode});
+		  fnPlayKeyboard({keyCode, waveform: selectSound.value});
 		  if (keyboard[keyCode]) {
-		      score.pending.push([keyboard[keyCode], Date.now() - startTime]);
+		      score.pending.push([keyboard[keyCode], Date.now() - startTime, selectSound.value]);
 		  }
 	      }
 	  })(reverseLookup[n + ',' + i]));
@@ -302,8 +302,8 @@ function AudioSynthView(score) {
   };
 
   // Creates our audio player
-  var fnPlayNote = function(note, octave) {
-      playNote(note, octave, selectSound.value);
+    var fnPlayNote = function(note, octave, waveform) {
+	playNote(note, octave, waveform);
     //   src = __audioSynth.generate(selectSound.value, note, octave, 2);
     // container = new Audio(src);
     // container.addEventListener('ended', function() { container = null; });
@@ -336,7 +336,7 @@ function AudioSynthView(score) {
       var arrPlayNote = keyboard[e.keyCode].split(',');
       var note = arrPlayNote[0];
       var octaveModifier = arrPlayNote[1]|0;
-      fnPlayNote(note, __octave + octaveModifier);
+	fnPlayNote(note, __octave + octaveModifier, e.waveform);
     } else {
       return false;
     }
@@ -374,22 +374,23 @@ function AudioSynthView(score) {
       const nextNoteTime = head[1] + startTime;
       setTimeout(function(array){
 	return function() {
-	  const def = (head[0] instanceof Array) ? head[0] : [head[0]];
-	  var i = def.length;
-	  var keys = [];
-	  while(i--) {
-	    keys.unshift(reverseLookup[def[i]]);
-	    fnPlayKeyboard({keyCode:keys[0]});
-	  }
-	  setTimeout(function(array, val){
-	    return function() {
-	      var i = val.length;
-	      while(i--) {
-		fnRemoveKeyBinding({keyCode:val[i]});
-	      }
+	    const def = (head[0] instanceof Array) ? head[0] : [head[0]];
+	    const waveform = head[2];
+	    var i = def.length;
+	    var keys = [];
+	    while(i--) {
+		keys.unshift(reverseLookup[def[i]]);
+		fnPlayKeyboard({keyCode:keys[0], waveform});
 	    }
-	  }(arr, keys), 125);
-	  fnPlaySong(array);
+	    setTimeout(function(array, val){
+		return function() {
+		    var i = val.length;
+		    while(i--) {
+			fnRemoveKeyBinding({keyCode:val[i]});
+		    }
+		}
+	    }(arr, keys), 125);
+	    fnPlaySong(array);
 	}
       }(arr), nextNoteTime - Date.now());
     } else {
@@ -416,8 +417,6 @@ function AudioSynthView(score) {
 
 
   // Set up global event listeners
-  window.addEventListener('keydown', fnPlayKeyboard);
-  window.addEventListener('keyup', fnRemoveKeyBinding);
   Object.defineProperty(this, 'draw', {
     value: fnCreateKeyboard
   });
