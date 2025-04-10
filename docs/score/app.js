@@ -3,6 +3,14 @@ window.addEventListener('load', function(e) {
     setTimeout(function() { window.scrollTo(0, 1); }, 1);
 }, false);
 
+document.addEventListener(
+  "dblclick",
+  function (event) {
+    event.preventDefault();
+  },
+  { passive: false }
+);
+
 const helpButton = document.querySelector('#help-button');
 const helpDialog = document.querySelector('#help-dialog');
 helpButton.onclick = () => {
