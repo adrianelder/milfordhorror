@@ -38,3 +38,22 @@ reset.onclick = function () {
   a.start();
   video.play();
 };
+
+const shareButton = document.querySelector('#share');
+if (!navigator.share) {
+  shareButton.style.display = 'none';
+} else {
+  shareButton.onclick = function () {
+    const tmp = [...score.commited, ...score.pending];
+    tmp.sort(function (a, b) {
+      return a[1] - b[1];
+    });
+    location.hash = serializeSong(tmp);
+    const shareData = {
+      title: "My Nosferatu Score",
+      text: "",
+      url: location.href,
+    };
+    navigator.share(shareData);
+  };
+}
