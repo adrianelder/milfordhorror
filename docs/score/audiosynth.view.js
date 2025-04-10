@@ -280,12 +280,13 @@ function AudioSynthView(score) {
 	  // thisKey.appendChild(label);
 	  thisKey.setAttribute('ID', 'KEY_' + n + ',' + i);
 	  thisKey.addEventListener(evtListener[0], (function(keyCode) {
-	    return function() {
-	      fnPlayKeyboard({keyCode});
-	      if (keyboard[keyCode]) {
-		score.pending.push([keyboard[keyCode], Date.now() - startTime]);
+	      return function(e) {
+		  e.preventDefault();
+		  fnPlayKeyboard({keyCode});
+		  if (keyboard[keyCode]) {
+		      score.pending.push([keyboard[keyCode], Date.now() - startTime]);
+		  }
 	      }
-	    }
 	  })(reverseLookup[n + ',' + i]));
 	  visualKeyboard[n + ',' + i] = thisKey;
 	  visualKeyboard.appendChild(thisKey);
