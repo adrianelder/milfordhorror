@@ -20,7 +20,14 @@ helpDialog.onclick = () => {
     helpDialog.style.display = 'none';
 }
 function parseSong(serialized) {
-  return serialized.length > 0 ? JSON.parse(LZString.decompressFromBase64(serialized)) : [];
+    if (serialized.length > 0) {
+	try {
+	    return JSON.parse(LZString.decompressFromBase64(serialized));
+	} catch {
+	    return [];
+	}
+    }
+    return [];
 }
 
 function serializeSong(json) {

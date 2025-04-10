@@ -40,7 +40,7 @@ function playNote(note, octave, waveform) {
     let attackTime = 0.3;
     let sustainLevel = 0.8;
     let releaseTime = 0.3;
-    let noteLength = 0.7;
+    let noteLength = waveform == 'sine' ? 0.2 : 0.7;
     let vibratoSpeed = 10;
     let vibratoAmount = 0;
     
@@ -68,7 +68,14 @@ function playNote(note, octave, waveform) {
     osc.stop(context.currentTime + noteLength);
     osc.connect(noteGain);
 
-    noteGain.connect(masterVolume);
+    if (waveform === 'sine') {
+	const sineVolume = context.createGain();
+	sineVolume.connect(context.destination);
+	sineVolume.gain.value = 0.9;
+	noteGain.connect(sineVolume);
+    } else {
+	noteGain.connect(masterVolume);
+    }
     noteGain.connect(delay);
 }
 
