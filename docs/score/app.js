@@ -1,3 +1,7 @@
+// Hides mobile browser's address bar when page is done loading.
+window.addEventListener('load', function(e) {
+    setTimeout(function() { window.scrollTo(0, 1); }, 1);
+}, false);
 
 function parseSong(serialized) {
   return serialized.length > 0 ? JSON.parse(LZString.decompressFromBase64(serialized)) : [];
