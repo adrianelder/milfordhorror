@@ -10,6 +10,7 @@ document.addEventListener(
   },
   { passive: false }
 );
+document.getElementById('root').addEventListener('click', () => {})
 
 const helpButton = document.querySelector('#help-button');
 const helpDialog = document.querySelector('#help-dialog');
