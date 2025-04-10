@@ -286,37 +286,30 @@ function AudioSynthView(score) {
     if (playingSong) return;
     playingSong = true;
     startTime = Date.now();
-    if(arr.length>0) {
-      setTimeout(() => {
-	fnPlaySong(arr);
-      }, arr[0][1]);
-    } else {
-      playingSong = false;
-    }
+    fnPlaySong(arr);
   }
 
   var fnPlaySong = function(arr) {
     if(arr.length>0 && !stopping) {
       const head = arr.shift();
       const nextNoteTime = head[1] + startTime;
-      //var noteLen = 1000*(1/parseInt(head[1]));
-      const def = (head[0] instanceof Array) ? head[0] : [head[0]];
-      var i = def.length;
-      var keys = [];
-      while(i--) {
-	keys.unshift(reverseLookup[def[i]]);
-	fnPlayKeyboard({keyCode:keys[0]});
-      }
-      setTimeout(function(array, val){
-	return function() {
-	  var i = val.length;
-	  while(i--) {
-	    fnRemoveKeyBinding({keyCode:val[i]});
-	  }
-	}
-      }(arr, keys), 125);
       setTimeout(function(array){
 	return function() {
+	  const def = (head[0] instanceof Array) ? head[0] : [head[0]];
+	  var i = def.length;
+	  var keys = [];
+	  while(i--) {
+	    keys.unshift(reverseLookup[def[i]]);
+	    fnPlayKeyboard({keyCode:keys[0]});
+	  }
+	  setTimeout(function(array, val){
+	    return function() {
+	      var i = val.length;
+	      while(i--) {
+		fnRemoveKeyBinding({keyCode:val[i]});
+	      }
+	    }
+	  }(arr, keys), 125);
 	  fnPlaySong(array);
 	}
       }(arr), nextNoteTime - Date.now());
