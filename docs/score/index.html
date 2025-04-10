@@ -19,7 +19,7 @@
              transition-duration: .3s;
              border: 1px solid transparent;
              letter-spacing: 2px;
-             min-width: 160px;
+             min-width: 100px;
              text-transform: uppercase;
              white-space: normal;
              font-weight: 700;
@@ -88,7 +88,34 @@
             z-index: 10;
 	    height: unset;
 	    border-radius: unset;
+	    margin: unset;
+	    padding: unset;
         }
+	#help-button, #help-close {
+            position: fixed;
+	    font-size: 34px;
+            top: 10px;
+            right: 10px;
+	    border-radius: 50%;
+	    width: 40px;
+	    height: 40px;
+	    color: white;
+            background-color: #529487;
+            z-index: 9;
+	    display: flex;
+	    justify-content: center;
+	}
+	#help-dialog {
+	    background-color: #226457;
+	    color: white;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 11;
+	    padding: 60px 20px;
+	}
 
 </style>
     <script src="audiosynth.js"></script>
@@ -96,6 +123,12 @@
     <script src="lz-string.min.js"></script>
   </head>
   <body>
+    <div id="help-button"><div>?</div></div>
+    <div id="help-dialog" style="display: none;">
+      <div id="help-close"><div>X</div></div>
+      Keyboard adapted from <a href="https://keithwhor.com/music/">https://keithwhor.com/music/</a>.
+      
+    </div>
     <video muted>
       <source src="clip.mp4" type="video/mp4" />
     </video>
@@ -110,7 +143,7 @@
       <button id="reset">Reset</button>
       <button id="share">Share</button>
       </div>
-      <button id="start">Start</button>
+      <button id="start">Tap anywhere to start adding your own score to this clip from Nosferatu</button>
 
     <script src="app.js"></script>
   </body>

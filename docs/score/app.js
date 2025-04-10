@@ -3,6 +3,14 @@ window.addEventListener('load', function(e) {
     setTimeout(function() { window.scrollTo(0, 1); }, 1);
 }, false);
 
+const helpButton = document.querySelector('#help-button');
+const helpDialog = document.querySelector('#help-dialog');
+helpButton.onclick = () => {
+    helpDialog.style.display = 'block';
+}
+helpDialog.onclick = () => {
+    helpDialog.style.display = 'none';
+}
 function parseSong(serialized) {
   return serialized.length > 0 ? JSON.parse(LZString.decompressFromBase64(serialized)) : [];
 }
