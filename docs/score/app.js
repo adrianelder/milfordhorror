@@ -27,12 +27,10 @@ const a = new AudioSynthView(score);
 a.draw();
 const video = document.querySelector('video');
 const start = document.querySelector('#start');
-start.onclick = function (e) {
-  e.preventDefault();
+start.onclick = function () {
   a.start();
   video.play();
   start.style.display = 'none';
-  return false;
 }
 video.onended = function (e) {
   a.start();
