@@ -32,6 +32,7 @@ start.onclick = function (e) {
   a.start();
   video.play();
   start.style.display = 'none';
+  return false;
 }
 video.onended = function (e) {
   a.start();
