@@ -10,6 +10,11 @@ layout: home
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c30bdb; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/civerous-in-milford-tickets-1271335732399?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">CIVEROUS</span></a>
 
 <p style="margin-top:3rem;">
+<img alt="Friday the 13th" src="/assets/F13Banner.png">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #d2040a; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/friday-june-13th-part-v-i-by-ct-cult-classics-milford-horror-tickets-1361253960239?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">FRIDAY THE 13TH</span></a>
+
+
+<p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
 <p>
 <span style="border-radius: 5px; background: white; color: black; padding: 5px;">
