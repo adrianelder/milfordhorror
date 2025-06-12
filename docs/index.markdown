@@ -9,6 +9,9 @@ layout: home
 <img alt="Friday the 13th" src="/assets/F13Banner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #d2040a; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/friday-june-13th-part-v-i-by-ct-cult-classics-milford-horror-tickets-1361253960239?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">FRIDAY THE 13TH</span></a>
 
+<p style="margin-top:3rem;">
+<img alt="I Know What You Did Last Summer" src="/assets/IKWYDLSBanner.png">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #4d7cc9; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-i-know-what-you-did-last-summer-1997-by-the-docks-tickets-1406293344249?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">I KNOW WHAT YOU DID LAST SUMMER</span></a>
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
