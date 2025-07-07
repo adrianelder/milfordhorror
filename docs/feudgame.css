@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'I Still Know';
-    src: url('IStillKnow.woff2') format('woff2'),
-        url('IStillKnow.woff') format('woff');
+    src: url('assets/IStillKnow.woff2') format('woff2'),
+        url('assets/IStillKnow.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 .item {
-    width: 40vw;
-    font-size: 60px;
+    width: 45vw;
+    font-size: 40px;
 }
 .item .label {
     opacity: 0;
@@ -50,7 +50,10 @@ html body, .jumbotron-container {
     background-color: black;
 }
 .jumbotron-container .content {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    padding: 20px;
 }
 #list-controls {
     display: flex;
@@ -63,8 +66,8 @@ html body, .jumbotron-container {
     position: fixed;
     display: flex;
     flex-direction: row-reverse;
-    top: 0;
-    right: 0;
+    top:  10px;
+    right: 10px;
     width: 200px;
     height: 100px;
     font-size: 50px;
@@ -79,4 +82,12 @@ html body, .jumbotron-container {
 .red-x.show {
     visibility: visible;
     opacity: 1;
+}
+.question {
+    width: 100%;
+    font-size: 55px;
+}
+.answers {
+    display: flex;
+    flex-wrap: wrap;
 }

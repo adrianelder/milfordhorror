@@ -19,11 +19,11 @@ function init() {
     }
     listInput.addEventListener('change', async () => {
         const round = roundMap[listInput.value];
-        const items = round.answers;
         const jumbotronContent = await getJumbotronContent();
-        updateDisplay(items, jumbotronContent);
-        updateDisplay(items, localPreview);
-        updateListControls(items);
+        updateListControls(round.answers);
+        updateDisplay(round, localPreview);
+        updateDisplay(round, jumbotronContent);
+
     });
 }
 
@@ -60,11 +60,21 @@ async function getJumbotronContent() {
     return otherWindow.document.querySelector('.content');
 }
 
-async function updateDisplay(items, container) {
+async function updateDisplay(round, container) {
     strikes.value = 0;
     emptyElement(container);
+    const strikeCounter = document.createElement('div')
+    strikeCounter.classList.add('strike-counter');
+    container.append(strikeCounter);
+    const question = document.createElement('div');
+    question.classList.add('question');
+    question.textContent = round.questionText;
+    container.append(question);
+    const answers = document.createElement('div');
+    answers.classList.add('answers');
+    container.append(answers);
     let counter = 1;
-    for (const item of items) {
+    for (const item of round.answers) {
         const itemElement = document.createElement('div');
         itemElement.classList.add('item');
         itemElement.classList.add(item.id);
@@ -75,12 +85,9 @@ async function updateDisplay(items, container) {
         itemLabel.classList.add('label');
         itemLabel.textContent = item.label;
         itemElement.append(itemNumber, itemLabel);
-        container.append(itemElement);
+        answers.append(itemElement);
         counter++;
     }
-    const strikeCounter = document.createElement('div')
-    strikeCounter.classList.add('strike-counter');
-    container.append(strikeCounter);
 }
 
 async function updateListControls(items) {
@@ -107,37 +114,113 @@ async function updateListControls(items) {
     }
 }
 
+const roundsTxt = `
+Something you accidentally hit with your car
+Animal
+Curb
+Another vehicle
+Pole
+The Fisherman
 
-const rounds = [
-    {
-        questionText: "It barks",
-        answers: [
-            {
-                label: "dog",
-            },
-            {
-                label: "seal",
-            },
-            {
-                label: "puppy"
+Something you throw in the ocean that you shouldn't
+Trash
+Food
+Plastic water bottle
+Dead body
+
+Places you might drive late at night
+Fast food
+Cemetery
+Woods
+Pharmacy
+Beach
+
+Things that might hook you
+A story/movie/show
+Drugs
+A song
+Food
+
+Things you might hook
+People
+Body parts
+Fish
+Clothes
+Crochet
+
+Something you once ate that you wish you didn't
+Uncommon meats
+Fish
+Rotten food
+Pet food
+Dirt
+Poop
+
+A hairdo you regret sporting
+Mullet
+Mohawk
+Bumpit
+Rat tail
+Beehive
+
+Something you keep secret
+Murder
+Money
+Age
+Weight
+Password
+It's a secret
+
+
+Something you regret doing late at night
+Eating
+Doomscrolling
+Staying up
+Drinking
+Sex
+Drugs
+
+Something you did at the beach last summer
+Swim
+Sunburn
+Read
+Sex
+Played catch
+
+Something you wouldn't want someone to mention when you visit home
+Embarassing Childhood
+Exes
+Politics
+Sex
+Money
+`;
+
+
+function parseRounds(txt) {
+    const output = [];
+    let nextRound = null;
+    const lines = txt.trim().split('\n');
+    for (let line of lines) {
+        line = line.trim();
+        if (line.length === 0) {
+            if (nextRound != null) {
+                nextRound = null;
             }
-        ]
-    },
-    {
-        questionText: "Things you hit with your car",
-        answers: [
-            {
-                label: "curbs",
-            },
-            {
-                label: "cars",
-            },
-            {
-                label: "walls",
+        } else {
+            if (nextRound != null) {
+                nextRound.answers.push({label: line});
+            } else {
+                nextRound = {
+                    questionText: line,
+                    answers: [],
+                }
+                output.push(nextRound);
             }
-        ]
+        }
     }
-];
+    return output;
+}
+const rounds = parseRounds(roundsTxt);
 const roundMap = {};
 
 function createId() {
