@@ -6,8 +6,8 @@ layout: home
 ---
 
 <center>
-<img alt="I Know What You Did Last Summer" src="/assets/IKWYDLSBanner.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #4d7cc9; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-i-know-what-you-did-last-summer-1997-by-the-docks-tickets-1406293344249?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">I KNOW WHAT YOU DID LAST SUMMER</span></a>
+<img alt="Madman" src="/assets/MadmanBanner.png">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #ecec19; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-madman-tickets-1538026010199?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">MADMAN</span></a>
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
