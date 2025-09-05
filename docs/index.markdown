@@ -14,6 +14,10 @@ layout: home
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c23e15; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-fall-of-the-house-of-usher-1928-with-live-score-by-sea-of-bones-tickets-1623767625679?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">THE FALL OF THE HOUSE OF USHER</span></a>
 
 <p style="margin-top:3rem;">
+<img alt="King Kong vs. Godzilla" src="/assets/GodzillaBanner.jpg">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #1884c5; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://milford-pl.libcal.com/event/15321300">FREE REGISTRATION FOR <span style="white-space: nowrap;">KING KONG VS GODZILLA</span></a>
+
+<p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
 <p>
 <span style="border-radius: 5px; background: white; color: black; padding: 5px;">
