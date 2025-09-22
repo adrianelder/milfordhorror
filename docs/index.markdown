@@ -6,10 +6,6 @@ layout: home
 ---
 
 <center>
-<img alt="Madman" src="/assets/MadmanBanner.png">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #ecec19; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-madman-tickets-1538026010199?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">MADMAN</span></a>
-
-<p style="margin-top:3rem;">
 <img alt="The Fall of the House of Usher" src="/assets/TheFallOfTheHouseOfUsherBanner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c23e15; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-fall-of-the-house-of-usher-1928-with-live-score-by-sea-of-bones-tickets-1623767625679?aff=oddtdtcreator">GET TICKETS TO <span style="white-space: nowrap;">THE FALL OF THE HOUSE OF USHER</span></a>
 
