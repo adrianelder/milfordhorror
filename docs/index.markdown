@@ -6,7 +6,7 @@ layout: home
 ---
 
 <center>
-<img alt="Black Christmas" src="/assets/BlackChristmasBanner.jpg">
+<img alt="Black Christmas" src="/assets/BlackChristmasBanner.png">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #f7d8ae; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/black-christmas-1974-with-dont-open-this-podcast-tickets-1963378431742?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">BLACK CHRISTMAS</span></a>
 
 <p style="margin-top:3rem;">
