@@ -6,8 +6,8 @@ layout: home
 ---
 
 <center>
-<img alt="King Kong vs. Godzilla" src="/assets/GodzillaBanner.jpg">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #1884c5; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://milford-pl.libcal.com/event/15321300">FREE REGISTRATION FOR <span style="white-space: nowrap;">KING KONG VS GODZILLA</span></a>
+<img alt="Black Christmas" src="/assets/BlackChristmasBanner.jpg">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #f7d8ae; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/black-christmas-1974-with-dont-open-this-podcast-tickets-1963378431742?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">BLACK CHRISTMAS</span></a>
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
