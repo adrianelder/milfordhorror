@@ -7,8 +7,7 @@ layout: home
 
 <center>
 <img alt="Mr. Vampire" src="/assets/MrVampireBanner.jpg">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c20000; color: #
-000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/mr-vampire-at-dumpling-house-tickets-1981885006405?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">MR. VAMPIRE</span></a>
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #c20000; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/mr-vampire-at-dumpling-house-tickets-1981885006405?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">MR. VAMPIRE</span></a>
 
 <p style="margin-top:3rem;">
 <img alt="A Bucket of Blood" src="/assets/BucketOfBloodPromo.png">
