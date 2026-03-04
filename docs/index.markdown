@@ -11,7 +11,7 @@ layout: home
 
 <p style="margin-top:3rem;">
 <img alt="The Mortuary Assistant" src="/assets/TheMortuaryAssistantBanner.jpg">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #db98e6; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-mortuary-assistant-at-a-funeral-home-with-the-filmmakers-tickets-1984419320607?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">THE MORTUARY ASSISTANT</span></a>
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #82786c; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-mortuary-assistant-at-a-funeral-home-with-the-filmmakers-tickets-1984419320607?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">THE MORTUARY ASSISTANT</span></a>
 
 <p style="margin-top:3rem;">
 <img alt="Critters 2" src="/assets/Critters2Banner.jpg">
