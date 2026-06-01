@@ -6,8 +6,8 @@ layout: home
 ---
 
 <center>
-<img alt="Critters 2" src="/assets/Critters2Banner.jpg">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #db98e6; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/critters-2-at-a-church-on-easter-weekend-tickets-1983649733752?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">CRITTERS 2</span></a>
+<img alt="The Funhouse" src="/assets/TheFunhouseBanner.jpg">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #efd97c; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-funhouse-at-fright-haven-tickets-1990740878557?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">THE FUNHOUSE</span></a>
 
 
 <p style="margin-top:3rem;">
