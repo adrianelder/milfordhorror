@@ -9,6 +9,10 @@ layout: home
 <img alt="The Funhouse" src="/assets/TheFunhouseBanner.jpg">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #efd97c; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/the-funhouse-at-fright-haven-tickets-1990740878557?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">THE FUNHOUSE</span></a>
 
+<p style="margin-top:3rem;">
+<img alt="Faust" src="/assets/FaustBanner.jpg">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #ddddd; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/faust-1926-with-live-score-by-aesops-sound-fables-tickets-1992530433163?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">FAUST</span></a>
+
 
 <p style="margin-top:3rem;">
 <span style="font-size: 1.5rem;">Follow for future events</span>
