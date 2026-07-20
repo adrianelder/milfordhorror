@@ -7,7 +7,7 @@ layout: home
 
 <center>
 <img alt="Sleepaway Camp" src="/assets/SleepawayCampBanner.jpg">
-<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #ff0000; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-sleepaway-camp-tickets-1994518023098?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">SLEEPAWAY CAMP</span></a>
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #fe010b; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-sleepaway-camp-tickets-1994518023098?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">SLEEPAWAY CAMP</span></a>
 
 
 <p style="margin-top:3rem;">
