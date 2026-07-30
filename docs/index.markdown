@@ -6,6 +6,10 @@ layout: home
 ---
 
 <center>
+<img alt="Jaws" src="/assets/JawsBanner.jpg">
+<p><a style="margin-top: 1rem; font-size: 1.5rem; background: #0c89ca; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://milfordct.myrec.com/info/activities/program_details.aspx?ProgramID=29940&fbclid=Iwb21leATWVopjbGNrBNZWb2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHuaEYEf81JP_MGDMMgZuIfUXpyF9_dyOHFzqmn_60EkrOIf4oFtUM2zlF0IR_aem_ZIEHQsluMBCR2otZSP0okA">INFO ABOUT <span style="white-space: nowrap;">JAWS</span></a>
+
+<p style="margin-top:3rem;">
 <img alt="Sleepaway Camp" src="/assets/SleepawayCampBanner.jpg">
 <p><a style="margin-top: 1rem; font-size: 1.5rem; background: #fe010b; color: #000000; padding: 5px; border-radius: 5px; display: inline-block;" href="https://www.eventbrite.com/e/watch-a-horror-movie-in-the-woods-sleepaway-camp-tickets-1994518023098?aff=oddtdtcreator">TICKETS TO <span style="white-space: nowrap;">SLEEPAWAY CAMP</span></a>
 
